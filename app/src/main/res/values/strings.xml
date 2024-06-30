@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ajedrez</string>
+    <string name="chessgame_on_board">ChessGame on Board</string>
+    <string name="start_now">Start Now </string>
+</resources>
