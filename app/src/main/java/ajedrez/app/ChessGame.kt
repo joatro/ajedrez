@@ -5,12 +5,7 @@ package ajedrez.app
 import Ajedreze.App.R
 import kotlin.math.abs
 
-interface GameListener{
-    fun onGameEnd()
-}
-
 object ChessGame : ChessDelegate {
-var gameListener: GameListener? = null
 
 
     private var piecesBox = mutableListOf<ChessPiece>()
@@ -240,9 +235,6 @@ var gameListener: GameListener? = null
                 it.col = to.col
                 it.row = to.row
             }
-            if (isCheckMate(Player.BLACK)|| isCheckMate(Player.WHITE)) {
-
-                gameListener?.onGameEnd()
 
             }
         }
